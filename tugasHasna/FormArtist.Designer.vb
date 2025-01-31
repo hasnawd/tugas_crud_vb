@@ -38,7 +38,7 @@ Partial Class FormArtist
         MenuStrip1.Items.AddRange(New ToolStripItem() {LogoutToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(800, 28)
+        MenuStrip1.Size = New Size(1276, 28)
         MenuStrip1.TabIndex = 0
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -78,19 +78,21 @@ Partial Class FormArtist
         dgvArtist.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvArtist.Location = New Point(12, 111)
         dgvArtist.Name = "dgvArtist"
+        dgvArtist.RightToLeft = RightToLeft.No
         dgvArtist.RowHeadersWidth = 51
-        dgvArtist.Size = New Size(776, 188)
+        dgvArtist.Size = New Size(1252, 188)
         dgvArtist.TabIndex = 3
         ' 
         ' FormArtist
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(1276, 450)
         Controls.Add(dgvArtist)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(MenuStrip1)
+        Enabled = False
         MainMenuStrip = MenuStrip1
         Name = "FormArtist"
         Text = "FormArtist"
