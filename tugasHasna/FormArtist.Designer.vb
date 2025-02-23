@@ -22,35 +22,21 @@ Partial Class FormArtist
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        MenuStrip1 = New MenuStrip()
-        LogoutToolStripMenuItem = New ToolStripMenuItem()
+        components = New ComponentModel.Container()
         Button1 = New Button()
         Button2 = New Button()
         MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
         dgvArtist = New DataGridView()
-        MenuStrip1.SuspendLayout()
+        ContextMenuStrip1 = New ContextMenuStrip(components)
+        ContextMenuStrip2 = New ContextMenuStrip(components)
+        SettingToolStripMenuItem = New ToolStripMenuItem()
         CType(dgvArtist, ComponentModel.ISupportInitialize).BeginInit()
+        ContextMenuStrip2.SuspendLayout()
         SuspendLayout()
-        ' 
-        ' MenuStrip1
-        ' 
-        MenuStrip1.ImageScalingSize = New Size(20, 20)
-        MenuStrip1.Items.AddRange(New ToolStripItem() {LogoutToolStripMenuItem})
-        MenuStrip1.Location = New Point(0, 0)
-        MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(1276, 28)
-        MenuStrip1.TabIndex = 0
-        MenuStrip1.Text = "MenuStrip1"
-        ' 
-        ' LogoutToolStripMenuItem
-        ' 
-        LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        LogoutToolStripMenuItem.Size = New Size(72, 24)
-        LogoutToolStripMenuItem.Text = "LogOut"
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(0, 0)
+        Button1.Location = New Point(1170, 12)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 1
@@ -83,6 +69,25 @@ Partial Class FormArtist
         dgvArtist.Size = New Size(1252, 188)
         dgvArtist.TabIndex = 3
         ' 
+        ' ContextMenuStrip1
+        ' 
+        ContextMenuStrip1.ImageScalingSize = New Size(20, 20)
+        ContextMenuStrip1.Name = "ContextMenuStrip1"
+        ContextMenuStrip1.Size = New Size(61, 4)
+        ' 
+        ' ContextMenuStrip2
+        ' 
+        ContextMenuStrip2.ImageScalingSize = New Size(20, 20)
+        ContextMenuStrip2.Items.AddRange(New ToolStripItem() {SettingToolStripMenuItem})
+        ContextMenuStrip2.Name = "ContextMenuStrip2"
+        ContextMenuStrip2.Size = New Size(126, 28)
+        ' 
+        ' SettingToolStripMenuItem
+        ' 
+        SettingToolStripMenuItem.Name = "SettingToolStripMenuItem"
+        SettingToolStripMenuItem.Size = New Size(125, 24)
+        SettingToolStripMenuItem.Text = "Setting"
+        ' 
         ' FormArtist
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -91,22 +96,18 @@ Partial Class FormArtist
         Controls.Add(dgvArtist)
         Controls.Add(Button2)
         Controls.Add(Button1)
-        Controls.Add(MenuStrip1)
         Enabled = False
-        MainMenuStrip = MenuStrip1
         Name = "FormArtist"
         Text = "FormArtist"
-        MenuStrip1.ResumeLayout(False)
-        MenuStrip1.PerformLayout()
         CType(dgvArtist, ComponentModel.ISupportInitialize).EndInit()
+        ContextMenuStrip2.ResumeLayout(False)
         ResumeLayout(False)
-        PerformLayout()
     End Sub
-
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents MySqlCommand1 As MySql.Data.MySqlClient.MySqlCommand
     Friend WithEvents dgvArtist As DataGridView
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents ContextMenuStrip2 As ContextMenuStrip
+    Friend WithEvents SettingToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -26,7 +26,7 @@ Public Class FormArtist
 
     End Sub
 
-    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
